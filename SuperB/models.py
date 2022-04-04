@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Products(models.Model):
-    barcode = models.PositiveIntegerField(primary_key=True, unique=True, blank=False)
+    barcode = models.CharField(primary_key=True, unique=True, blank=False, max_length=20)
     name = models.CharField(max_length=100, blank=False)
     price = models.PositiveSmallIntegerField(help_text="<em>сом.</em>", blank=False)
 

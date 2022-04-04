@@ -56,7 +56,7 @@ WSGI_APPLICATION = 'cantin.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kantin_db_django',
+        'NAME': 'cantin_db',
         'USER': 'baielkantin',
         'PASSWORD': '19172211',
         'HOST': 'localhost',
