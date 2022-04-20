@@ -12,7 +12,7 @@ class Products(models.Model):
 
 class Students(models.Model):
 
-    id_student = models.PositiveIntegerField(primary_key=True, unique=True, blank=False)
+    id_student = models.CharField(max_length=70, primary_key=True, unique=True, blank=False)
     name = models.CharField(max_length=60, blank=False)
     surname = models.CharField(max_length=60, blank=False)
     cash = models.PositiveIntegerField(help_text="<em>сом.</em>")
